@@ -1,5 +1,5 @@
 import { asyncError, errorHandler } from "../../../middlewares/error";
-import { User } from "../../../models/user";
+import { User } from "../../../backend/models/user";
 import {
   connectDB,
   cookieSetter,
