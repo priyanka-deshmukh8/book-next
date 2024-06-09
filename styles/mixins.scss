@@ -1,0 +1,57 @@
+// styles/mixins.scss
+
+$color1: #0070f3;
+$color2: #f0f0f0;
+$color3: #333;
+
+@mixin container($max-width, $padding: 0, $margin: 0) {
+  max-width: $max-width;
+  padding: $padding;
+  margin: $margin;
+  width: 100%;
+}
+
+@mixin flexBox($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin inputs {
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    &:focus {
+      border-color: $color2;
+      outline: black;
+    }
+  }
+}
+
+@mixin styledText($size) {
+  font-size: $size;
+  font-weight: bold;
+  color: white;
+}
+
+@mixin myButton($width, $padding) {
+  display: inline-block;
+  width: $width;
+  padding: $padding;
+  background-color: $color1;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($color1, 10%);
+  }
+}

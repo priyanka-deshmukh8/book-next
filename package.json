@@ -1,0 +1,28 @@
+{
+  "name": "bookapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie": "^0.5.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.6.13",
+    "next": "^14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "sass": "^1.77.4",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4"
+  }
+}
